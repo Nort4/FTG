@@ -14,4 +14,4 @@ async def _(event):
     rnd = random.randrange(1, 100)
     rndt = str(rnd)
     
-    await event.edit("Ты гей на " + rndt + " %")
+    await event.edit("🏳️‍🌈 Ты гей на " + rndt + " %")
