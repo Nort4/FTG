@@ -22,7 +22,7 @@ async def _(event):
 
 
     rqst = request.urlopen(url)
-    if rqst.getcode() in [200]:
-        charset = rqst.info().get_content_charset()
-    	content = rqst.read().decode(charset)
-    	await event.edit(content.split('Weather ')[2])
+
+    charset = rqst.info().get_content_charset()
+    content = rqst.read().decode(charset)
+    await event.edit(content.split('Weather ')[2])
