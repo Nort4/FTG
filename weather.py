@@ -17,12 +17,12 @@ async def _(event):
     metric = 'm'
     option = '0T'
 
-	  url = (f'http://wttr.in/{location}?F{wind}{metric}{option}')
+    url = (f'http://wttr.in/{location}?F{wind}{metric}{option}')
 
 
 
-	  rqst = request.urlopen(url)
-	  if rqst.getcode() in [200]:
-    	  charset = rqst.info().get_content_charset()
-    	  content = rqst.read().decode(charset)
-    	  await event.edit(content.split('Weather ')[2])
+    rqst = request.urlopen(url)
+    if rqst.getcode() in [200]:
+        charset = rqst.info().get_content_charset()
+    	content = rqst.read().decode(charset)
+    	await event.edit(content.split('Weather ')[2])
