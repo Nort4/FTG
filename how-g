@@ -11,7 +11,7 @@ async def _(event):
         return
        
     
-    rnd = randow.randrange(1, 100)
+    rnd = random.randrange(1, 100)
     rndt = str(rnd)
     
     await event.edit("Ты гей на " + rndt + " %")
