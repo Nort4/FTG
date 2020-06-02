@@ -17,4 +17,4 @@ async def _(event):
     input_str = event.pattern_match.group(1)
         
     addr = gethostbyname(input_str)
-    await event.edit("IP Address of website is" + " " + addr)
+    await event.edit("На ip адрес сайта: " + " " + addr)
