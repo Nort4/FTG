@@ -5,7 +5,7 @@ import sys
 import random
 
 
-@North.on(events.NewMessage(pattern=r"\.howg", outgoing=True))
+@borg.on(events.NewMessage(pattern=r"\.howg", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
