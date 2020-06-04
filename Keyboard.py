@@ -1,3 +1,7 @@
+Модуль не мой!
+
+Модуль писал @DneZyeK
+
 #	Friendly Telegram (telegram userbot)
 #	Copyright (C) 2018-2019 The Authors
 
