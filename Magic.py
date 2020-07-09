@@ -10,5 +10,4 @@ async def _(event):
     if event.fwd_from:
         return
        
-    send_info = client.get_me()
-    await event.edit(send_info)
+    await event.edit(.eval client.get_me())
