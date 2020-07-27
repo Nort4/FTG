@@ -6,7 +6,6 @@ import wikipedia
 wikipedia.set_lang("ru")
 
 
-await message.edit(sasat)
 @borg.on(admin_cmd(pattern="wiki (.*)"))
 async def _(event):
     if event.fwd_from:
