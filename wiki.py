@@ -14,4 +14,4 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     
     wiki_search = wikipedia.summary(input_str)
-    await message.edit(wiki_search)
+    await event.edit(wiki_search)
